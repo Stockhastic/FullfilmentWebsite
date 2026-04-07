@@ -2,15 +2,31 @@
 $black: #000;
 $white: #fff;
 
-$text-color: #101828;
+// Palette: Sunset Serenade
+$palette-carrot-orange: #F18F01;
+$palette-bondi-blue: #048BA8;
+$palette-yale-blue: #2E4057;
+
+$palette-carrot-orange-dark: #D87E01;
+$palette-bondi-blue-dark: #03758D;
+$palette-yale-blue-deep: #223247;
+
+$palette-bondi-blue-soft: #E9F6F9;
+$palette-carrot-orange-soft: #FFF1DA;
+$palette-neutral-soft: #F4F8FA;
+$palette-border-soft: #D6E3E8;
+
+$text-color: $palette-yale-blue;
 $text-color-muted: rgba($text-color, 0.74);
 $text-color-secondary: rgba($text-color, 0.56);
-$bg-color: #f3f6fb;
-$surface-color: #fff;
-$surface-color-muted: #edf3fb;
-$border-color: #d7dfe9;
-$accent-color: #0f62fe;
-$accent-color-dark: #0b4fd0;
+$bg-color: $palette-neutral-soft;
+$surface-color: $white;
+$surface-color-muted: $palette-bondi-blue-soft;
+$border-color: $palette-border-soft;
+$accent-color: $palette-carrot-orange;
+$accent-color-dark: $palette-carrot-orange-dark;
+$accent-color-alt: $palette-bondi-blue;
+$accent-color-alt-dark: $palette-bondi-blue-dark;
 $success-color: #12b76a;
 $danger-color: #d92d20;
 

@@ -18,16 +18,14 @@
     color: $text-color;
 }
 
-.site-header__brand-mark {
-    @include flex-center(center, center);
-    width: 40px;
-    height: 40px;
-    border-radius: $radius-md;
-    background-color: $accent-color;
-    color: $white;
-    font-size: 16px;
-    font-weight: $fw-bold;
-    line-height: 1;
+.site-header__brand-media {
+    flex: 0 0 auto;
+}
+
+.site-header__brand-logo {
+    display: block;
+    width: 44px;
+    height: auto;
 }
 
 .site-header__brand-text {

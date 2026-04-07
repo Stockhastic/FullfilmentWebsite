@@ -1,8 +1,8 @@
 .site-footer {
-    margin-top: 12px;
+    margin-top: 0;
     padding: 0 0 40px;
     background:
-        linear-gradient(180deg, rgba(#172033, 0.98), rgba(#0d1424, 1));
+        linear-gradient(180deg, rgba($palette-yale-blue, 0.98), rgba($palette-yale-blue-deep, 1));
 }
 
 .site-footer__panel {
@@ -30,17 +30,14 @@
     @include flex-center(flex-start, flex-start, 16px);
 }
 
-.site-footer__brand-mark {
-    @include flex-center(center, center);
-    width: 44px;
-    height: 44px;
-    border-radius: $radius-md;
-    background-color: $accent-color;
-    color: $white;
-    font-size: 16px;
-    font-weight: $fw-bold;
-    line-height: 1;
-    box-shadow: 0 14px 28px rgba($accent-color, 0.22);
+.site-footer__brand-media {
+    flex: 0 0 auto;
+}
+
+.site-footer__brand-logo {
+    display: block;
+    width: 52px;
+    height: auto;
 }
 
 .site-footer__brand-copy,
