@@ -1,41 +1,96 @@
 .site-header {
-    border-bottom: 1px solid $border-color;
-    background-color: $bg-color;
-}
-
-.site-header__inner,
-.page-content {
-    @include container;
+    position: sticky;
+    top: 0;
+    z-index: $z-header;
+    border-bottom: 1px solid rgba($text-color, 0.08);
+    background-color: rgba($surface-color, 0.92);
+    backdrop-filter: blur(18px);
 }
 
 .site-header__inner {
-    @include flex-center(space-between, center, 24px);
-    padding-block: 24px;
+    @include container;
+    @include flex-center(space-between, center, 20px);
+    padding-block: 18px;
 }
 
 .site-header__brand {
-    font-size: 20px;
+    @include flex-center(flex-start, center, 12px);
+    color: $text-color;
+}
+
+.site-header__brand-mark {
+    @include flex-center(center, center);
+    width: 40px;
+    height: 40px;
+    border-radius: $radius-md;
+    background-color: $accent-color;
+    color: $white;
+    font-size: 16px;
     font-weight: $fw-bold;
+    line-height: 1;
 }
 
-.site-header__nav a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.page-content {
-    padding-block: $section-offset;
-}
-
-.page-content h1 {
-    margin-bottom: 16px;
-    font-size: 40px;
-    font-weight: $fw-bold;
-}
-
-.page-content p {
-    max-width: 600px;
+.site-header__brand-text {
     font-size: 18px;
-    line-height: 1.6;
+    font-weight: $fw-bold;
+    line-height: 1.3;
+}
+
+.site-header__nav {
+    @include flex-center(center, center, 24px);
+    flex-wrap: wrap;
+}
+
+.site-header__link {
     color: $text-color-muted;
+    font-size: 15px;
+    font-weight: $fw-medium;
+    line-height: 1.4;
+    transition: color $transition-base;
+
+    &:hover,
+    &:focus-visible {
+        color: $text-color;
+    }
+}
+
+.site-header__cta {
+    flex-shrink: 0;
+}
+
+@include media-down(desktop) {
+    .site-header__inner {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .site-header__nav {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 12px 20px;
+    }
+
+    .site-header__cta {
+        margin-left: auto;
+    }
+}
+
+@include media-down(tablet) {
+    .site-header__inner {
+        padding-block: 16px;
+    }
+
+    .site-header__brand {
+        width: 100%;
+    }
+
+    .site-header__brand-text {
+        font-size: 16px;
+    }
+
+    .site-header__cta {
+        margin-left: 0;
+        width: 100%;
+    }
 }

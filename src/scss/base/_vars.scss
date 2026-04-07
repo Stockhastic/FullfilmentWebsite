@@ -2,13 +2,15 @@
 $black: #000;
 $white: #fff;
 
-$text-color: #111;
-$text-color-muted: rgba($black, 0.72);
-$text-color-secondary: rgba($black, 0.64);
-$bg-color: $white;
-$surface-color: #f5f5f5;
-$border-color: #555;
-$accent-color: #2f6fed;
+$text-color: #101828;
+$text-color-muted: rgba($text-color, 0.74);
+$text-color-secondary: rgba($text-color, 0.56);
+$bg-color: #f3f6fb;
+$surface-color: #fff;
+$surface-color-muted: #edf3fb;
+$border-color: #d7dfe9;
+$accent-color: #0f62fe;
+$accent-color-dark: #0b4fd0;
 $success-color: #12b76a;
 $danger-color: #d92d20;
 
@@ -28,10 +30,10 @@ $fw-bold: 700;
 $container: 1200px;
 $container-wide: 1440px;
 $page-padding: 20px;
-$section-offset: 80px;
+$section-offset: 32px;
 
 // Radius
-$radius-sm: 4px;
+$radius-sm: 6px;
 $radius-md: 8px;
 
 // Motion

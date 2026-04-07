@@ -5,6 +5,81 @@
 
 @import "./components";
 
-.infocard{
-    @include createCard(2rem, 10px) 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: $font-main;
+    font-size: $fz-base;
+    line-height: $lh-base;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.button {
+    @include flex-center(center, center, 10px);
+    min-height: 52px;
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: $radius-md;
+    font-size: 16px;
+    font-weight: $fw-semibold;
+    line-height: 1.25;
+    text-align: center;
+    transition:
+        background-color $transition-base,
+        color $transition-base,
+        border-color $transition-base,
+        box-shadow $transition-base,
+        transform $transition-base;
+
+    &:hover,
+    &:focus-visible {
+        transform: translateY(-1px);
+    }
+
+    &:focus-visible {
+        outline: 2px solid rgba($accent-color, 0.24);
+        outline-offset: 2px;
+    }
+}
+
+.button--primary {
+    background-color: $accent-color;
+    color: $white;
+    box-shadow: 0 14px 28px rgba($accent-color, 0.18);
+
+    &:hover,
+    &:focus-visible {
+        background-color: $accent-color-dark;
+        color: $white;
+    }
+}
+
+.button--secondary {
+    border-color: $border-color;
+    background-color: $surface-color;
+    color: $text-color;
+    box-shadow: 0 10px 24px rgba($text-color, 0.05);
+
+    &:hover,
+    &:focus-visible {
+        border-color: rgba($text-color, 0.18);
+        background-color: $surface-color-muted;
+        color: $text-color;
+    }
 }

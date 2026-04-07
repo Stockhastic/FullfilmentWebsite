@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/css/styles.css">
+    <meta
+        name="description"
+        content="Фулфилмент-склад в Ереване для брендов, интернет-магазинов и селлеров: приёмка, хранение, маркировка, упаковка, сборка, отгрузка и прозрачный контроль остатков."
+    >
 
     <!-- FAVICON -->
     <!-- Favicon Standart -->
@@ -23,7 +27,7 @@
     <!-- Android -->
     <link rel="manifest" href="src/graphics/site.webmanifest">
 
-    <!-- <title>PAGENAME | Main Page</title> -->
+    <title>Фулфилмент-склад в Ереване | Приёмка, хранение, сборка и отгрузка</title>
     
     <!-- OpenGraphics for Thumbnails -->
     <!-- <meta property="og:title" content="TITLE_PAGE" />
@@ -47,12 +51,638 @@
 <body>
     <div data-partial="src/partials/header.html"></div>
 
-    <main class="page-content">
-        <h1>Blank Slate</h1>
-        <p>Start building the page structure from here.</p>
+    <main class="landing">
+        <section class="landing__section hero" id="hero" aria-labelledby="hero-title">
+            <div class="hero__panel">
+                <div class="hero__content">
+                    <p class="hero__eyebrow">Фулфилмент-склад в Ереване для брендов, селлеров и интернет-магазинов</p>
+                    <h1 class="hero__title" id="hero-title">Продавайте больше, а складскую операционку оставьте нам</h1>
+                    <p class="hero__lead">
+                        Берём на себя приёмку, хранение, маркировку, сборку и отгрузку
+                        заказов, чтобы вы росли без пересорта, штрафов и хаоса в
+                        остатках.
+                    </p>
+                    <div class="hero__actions">
+                        <a class="button button--primary hero__button" href="#final-cta">Получить расчёт за 30 минут</a>
+                    </div>
+                    <p class="hero__support">
+                        Когда склад живёт в таблицах и чатах, рост компании начинает
+                        ломать маржу. Вам приходится выбирать между рекламой, наймом и
+                        бесконечным контролем коробок. Мы снимаем эту нагрузку и
+                        превращаем склад в предсказуемый процесс. Одна цель: каждый
+                        заказ собирается вовремя, а у вас остаётся время на продажи и
+                        масштабирование.
+                    </p>
+                </div>
+
+                <aside class="hero__aside">
+                    <figure class="hero__media">
+                        <img
+                            class="hero__image"
+                            src="src/graphics/png/phoho1.png"
+                            alt="Складское помещение с готовой инфраструктурой для фулфилмента"
+                            width="1536"
+                            height="1024"
+                        >
+                    </figure>
+
+                    <div class="hero__summary" aria-label="Ключевые преимущества">
+                        <div class="hero__summary-card">
+                            <p class="hero__summary-label">Что меняется после запуска</p>
+                            <ul class="hero__summary-list">
+                                <li class="hero__summary-item">Одна точка управления складской операцией в Ереване</li>
+                                <li class="hero__summary-item">Прозрачные остатки, сборка и статусы заказов</li>
+                                <li class="hero__summary-item">Меньше ручного контроля, ошибок, штрафов и потерь</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="landing__section showcase" aria-labelledby="showcase-title">
+            <div class="landing__section-header">
+                <p class="landing__section-eyebrow">Склад в работе</p>
+                <h2 class="landing__section-title" id="showcase-title">Операционная среда, в которой заказы не теряются по дороге</h2>
+                <p class="showcase__intro">
+                    Все процессы строятся вокруг понятного хранения, быстрого доступа
+                    к товару, предсказуемой сборки и стабильной отгрузки без ручного
+                    хаоса.
+                </p>
+            </div>
+
+            <div class="showcase__grid">
+                <figure class="showcase__item showcase__item--wide">
+                    <img
+                        class="showcase__image"
+                        src="src/graphics/png/phoho2.png"
+                        alt="Складская инфраструктура для хранения и обработки товара"
+                        width="1536"
+                        height="1024"
+                    >
+                    <figcaption class="showcase__caption">Складская инфраструктура</figcaption>
+                </figure>
+
+                <figure class="showcase__item">
+                    <img
+                        class="showcase__image"
+                        src="src/graphics/png/phoho3.png"
+                        alt="Операционная зона для складской обработки"
+                        width="1536"
+                        height="1024"
+                    >
+                    <figcaption class="showcase__caption">Операционная зона</figcaption>
+                </figure>
+
+                <figure class="showcase__item">
+                    <img
+                        class="showcase__image"
+                        src="src/graphics/png/phoho4.png"
+                        alt="Подготовка заказов к упаковке и дальнейшей отгрузке"
+                        width="1536"
+                        height="1024"
+                    >
+                    <figcaption class="showcase__caption">Подготовка заказов</figcaption>
+                </figure>
+
+                <figure class="showcase__item showcase__item--wide">
+                    <img
+                        class="showcase__image"
+                        src="src/graphics/png/phoho5.png"
+                        alt="Поток отгрузки и обработки складских операций"
+                        width="1536"
+                        height="1024"
+                    >
+                    <figcaption class="showcase__caption">Поток отгрузки</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="landing__section problem" id="problem" aria-labelledby="problem-title">
+            <div class="landing__section-header">
+                <p class="landing__section-eyebrow">Проблема</p>
+                <h2 class="landing__section-title" id="problem-title">Почему рост начинает тормозить именно на складе</h2>
+            </div>
+
+            <div class="problem__grid">
+                <article class="problem__card">
+                    <h3 class="problem__card-title">Когда рост упирается в склад</h3>
+                    <p class="problem__card-text">
+                        Сначала всё выглядит управляемо: несколько поставок, ручной
+                        учёт, упаковка своими силами, знакомый курьер. Потом заказов
+                        становится больше, SKU разрастаются, появляются возвраты,
+                        срочные отгрузки и требования площадок к маркировке. В этот
+                        момент склад перестаёт быть «задней комнатой» и становится
+                        узким местом бизнеса.
+                    </p>
+                </article>
+
+                <article class="problem__card">
+                    <h3 class="problem__card-title">Как это бьёт по владельцу</h3>
+                    <p class="problem__card-text">
+                        Для владельца это означает постоянное напряжение: каждый день
+                        начинается с вопросов «что приехало», «что потеряли», «почему
+                        клиенту ушёл не тот товар» и «успеем ли мы сегодня». Команда
+                        тушит пожары вместо того, чтобы строить систему, а любая ошибка
+                        бьёт не только по деньгам, но и по репутации бренда.
+                    </p>
+                </article>
+
+                <article class="problem__card">
+                    <h3 class="problem__card-title">Почему это повторяется</h3>
+                    <p class="problem__card-text">
+                        Причина почти всегда одинаковая: операционные процессы растут
+                        быстрее, чем инфраструктура. Нет единой точки ответственности,
+                        нет прозрачного учёта, нет SLA по сборке и возвратам, нет
+                        нормальной интеграции между продажами и остатками. В итоге
+                        бизнес тянет на себе склад, хотя должно быть наоборот.
+                    </p>
+                </article>
+
+                <article class="problem__card">
+                    <h3 class="problem__card-title">Сколько стоит хаос</h3>
+                    <p class="problem__card-text">
+                        Объём проблемы быстро становится измеримым. На зрелых
+                        фулфилмент-операциях рынок уже работает с площадями до 100 000
+                        кв. м и потоками до 100 000 заказов в день, что показывает
+                        простой факт: логистика давно стала отдельной системой. Даже у
+                        небольшого бренда одна ошибка в маркировке, один пересорт или
+                        одна сорванная отгрузка могут съедать прибыль всей партии.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="landing__section process" id="process" aria-labelledby="process-title">
+            <div class="landing__section-header">
+                <p class="landing__section-eyebrow">Как это работает</p>
+                <h2 class="landing__section-title" id="process-title">Три шага от ручного склада к управляемой системе</h2>
+            </div>
+
+            <ol class="process__list">
+                <li class="process__item">
+                    <span class="process__step">01</span>
+                    <h3 class="process__item-title">Разбираем ваш процесс и объёмы</h3>
+                    <p class="process__item-text">
+                        Смотрим, откуда приходит товар, сколько у вас SKU, какие
+                        каналы продаж, как часто бывают поставки и возвраты. На этом
+                        этапе фиксируем одну главную цель: что должно стать проще уже
+                        в первый месяц.
+                    </p>
+                </li>
+                <li class="process__item">
+                    <span class="process__step">02</span>
+                    <h3 class="process__item-title">Настраиваем складскую операцию под ваш бизнес</h3>
+                    <p class="process__item-text">
+                        Принимаем товар, заносим остатки в учёт, согласуем правила
+                        маркировки, упаковки, комплектации и отгрузки. Вы начинаете
+                        видеть понятную картину по остаткам, статусам заказов и
+                        слабым местам без ручного контроля каждого шага.
+                    </p>
+                </li>
+                <li class="process__item">
+                    <span class="process__step">03</span>
+                    <h3 class="process__item-title">Собираем и отгружаем заказы без операционного хаоса</h3>
+                    <p class="process__item-text">
+                        Команда работает по согласованному SLA: сборка, упаковка,
+                        передача в доставку, обработка возвратов и отчётность. В
+                        итоге вы получаете склад в Ереване, который выдерживает рост
+                        заказов, а не ломается от него.
+                    </p>
+                </li>
+            </ol>
+        </section>
+
+        <section class="landing__section models" id="models" aria-labelledby="models-title">
+            <div class="landing__section-header">
+                <p class="landing__section-eyebrow">Модели работы</p>
+                <h2 class="landing__section-title" id="models-title">По каким моделям мы работаем</h2>
+                <p class="models__intro">
+                    Подбираем формат работы под маркетплейсы, прямые продажи и
+                    оптовые отгрузки. Можно выстроить полный фулфилмент-контур под
+                    одну модель или собрать гибридный процесс под ваш канал продаж.
+                </p>
+            </div>
+
+            <div class="models__grid">
+                <article class="models__card models__card--wide">
+                    <div class="models__head">
+                        <span class="models__icon" aria-hidden="true"></span>
+                        <div class="models__heading">
+                            <h3 class="models__title">Модель FBO</h3>
+                            <p class="models__subtitle">Fulfillment by Operator</p>
+                        </div>
+                    </div>
+                    <p class="models__text">
+                        При модели FBO вы доставляете товар на наш склад, а мы
+                        берём на себя всю предпродажную подготовку для работы с
+                        маркетплейсом и дальнейшую передачу товара в нужный канал.
+                    </p>
+                    <ol class="models__list models__list--ordered">
+                        <li class="models__list-item">
+                            Принимаем товар у продавца на складе или организуем
+                            забор у поставщика вашего клиента.
+                        </li>
+                        <li class="models__list-item">
+                            Проверяем продукцию, внешний вид, комплектность,
+                            маркировку и соответствие требованиям площадки.
+                        </li>
+                        <li class="models__list-item">
+                            Подготавливаем товар к отгрузке и заводим его в
+                            управляемый складской поток без ручного хаоса.
+                        </li>
+                    </ol>
+                </article>
+
+                <article class="models__card">
+                    <div class="models__head">
+                        <span class="models__icon" aria-hidden="true"></span>
+                        <div class="models__heading">
+                            <h3 class="models__title">Модель FBS</h3>
+                            <p class="models__subtitle">Fulfillment by Seller</p>
+                        </div>
+                    </div>
+                    <p class="models__text">
+                        Товар хранится на нашем складе. Когда покупатель оформляет
+                        заказ на маркетплейсе, мы сразу получаем данные в системе,
+                        комплектуем заказ, маркируем, упаковываем и передаём его в
+                        доставку от имени продавца.
+                    </p>
+                    <ul class="models__list">
+                        <li class="models__list-item">Хранение и контроль остатков.</li>
+                        <li class="models__list-item">Оперативная сборка по SLA.</li>
+                        <li class="models__list-item">Подготовка к отгрузке без задержек.</li>
+                    </ul>
+                </article>
+
+                <article class="models__card">
+                    <div class="models__head">
+                        <span class="models__icon" aria-hidden="true"></span>
+                        <div class="models__heading">
+                            <h3 class="models__title">Модель DBS</h3>
+                            <p class="models__subtitle">Delivery by Seller</p>
+                        </div>
+                    </div>
+                    <p class="models__text">
+                        При модели DBS товары хранятся у нас на складе или на вашей
+                        стороне по выбранной схеме. После оформления заказа мы
+                        организуем подготовку и доставку напрямую покупателю без
+                        лишнего операционного слоя.
+                    </p>
+                </article>
+
+                <article class="models__card">
+                    <div class="models__head">
+                        <span class="models__icon" aria-hidden="true"></span>
+                        <div class="models__heading">
+                            <h3 class="models__title">Модель B2B</h3>
+                            <p class="models__subtitle">Business to Business</p>
+                        </div>
+                    </div>
+                    <p class="models__text">
+                        Закрываем полный цикл логистического сопровождения для
+                        оптовых клиентов, сетей и корпоративных покупателей:
+                        паллетные отгрузки, маркировка, документы, графики поставок
+                        и контроль исполнения по каждому заказу.
+                    </p>
+                </article>
+
+                <article class="models__card">
+                    <div class="models__head">
+                        <span class="models__icon" aria-hidden="true"></span>
+                        <div class="models__heading">
+                            <h3 class="models__title">Модель B2C</h3>
+                            <p class="models__subtitle">Business to Consumer</p>
+                        </div>
+                    </div>
+                    <p class="models__text">
+                        Поддерживаем прямые продажи конечным покупателям через
+                        интернет-магазин, соцсети и маркетплейсы: приём заказа,
+                        сборка, упаковка, передача в доставку, возвраты и понятная
+                        отчётность по каждому каналу.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="landing__section features" id="included" aria-labelledby="included-title">
+            <div class="landing__section-header">
+                <p class="landing__section-eyebrow">Что входит</p>
+                <h2 class="landing__section-title" id="included-title">Полный набор операций, который разгружает команду и защищает маржу</h2>
+            </div>
+
+            <ul class="features__list">
+                <li class="features__item">
+                    <span class="features__icon" aria-hidden="true">✓</span>
+                    <div class="features__body">
+                        <h3 class="features__title">Приёмка и сверка товара</h3>
+                        <p class="features__text">
+                            Каждая поставка проверяется на соответствие документам,
+                            чтобы вы не начинали продажи с потерь и путаницы.
+                        </p>
+                    </div>
+                </li>
+                <li class="features__item">
+                    <span class="features__icon" aria-hidden="true">✓</span>
+                    <div class="features__body">
+                        <h3 class="features__title">Адресное хранение на складе</h3>
+                        <p class="features__text">
+                            Товар лежит в понятной системе, а не «где нашлось место»,
+                            поэтому поиск, сборка и инвентаризация не тормозят
+                            операции.
+                        </p>
+                    </div>
+                </li>
+                <li class="features__item">
+                    <span class="features__icon" aria-hidden="true">✓</span>
+                    <div class="features__body">
+                        <h3 class="features__title">Маркировка, стикеровка и подготовка к отгрузке</h3>
+                        <p class="features__text">
+                            Это снижает риск отказов, возвратов и штрафов со стороны
+                            площадок и партнёров.
+                        </p>
+                    </div>
+                </li>
+                <li class="features__item">
+                    <span class="features__icon" aria-hidden="true">✓</span>
+                    <div class="features__body">
+                        <h3 class="features__title">Комплектация и упаковка заказов</h3>
+                        <p class="features__text">
+                            Клиент получает полный и аккуратно собранный заказ, а вы
+                            перестаёте терять деньги на ошибках в наборе.
+                        </p>
+                    </div>
+                </li>
+                <li class="features__item">
+                    <span class="features__icon" aria-hidden="true">✓</span>
+                    <div class="features__body">
+                        <h3 class="features__title">Сборка наборов и промо-комплектов</h3>
+                        <p class="features__text">
+                            Можно быстро запускать акции, подарочные боксы и
+                            специальные предложения без хаоса на стороне команды.
+                        </p>
+                    </div>
+                </li>
+                <li class="features__item">
+                    <span class="features__icon" aria-hidden="true">✓</span>
+                    <div class="features__body">
+                        <h3 class="features__title">Учёт остатков и регулярные инвентаризации</h3>
+                        <p class="features__text">
+                            Вы принимаете решения по закупкам на цифрах, а не на
+                            ощущениях и срочных сообщениях из чата.
+                        </p>
+                    </div>
+                </li>
+                <li class="features__item">
+                    <span class="features__icon" aria-hidden="true">✓</span>
+                    <div class="features__body">
+                        <h3 class="features__title">Обработка возвратов</h3>
+                        <p class="features__text">
+                            Товар быстрее возвращается в оборот, а проблемные позиции
+                            не висят неделями в неопределённом статусе.
+                        </p>
+                    </div>
+                </li>
+                <li class="features__item">
+                    <span class="features__icon" aria-hidden="true">✓</span>
+                    <div class="features__body">
+                        <h3 class="features__title">Отгрузка B2C и B2B заказов</h3>
+                        <p class="features__text">
+                            Один склад закрывает и розницу, и оптовые сценарии, чтобы
+                            вы не плодили отдельные процессы под каждый канал.
+                        </p>
+                    </div>
+                </li>
+                <li class="features__item">
+                    <span class="features__icon" aria-hidden="true">✓</span>
+                    <div class="features__body">
+                        <h3 class="features__title">Отчётность и операционная поддержка</h3>
+                        <p class="features__text">
+                            Вы видите, где теряются деньги, что перегружено и какой
+                            участок уже пора усиливать.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="landing__section cases" id="cases" aria-labelledby="cases-title">
+            <div class="landing__section-header">
+                <p class="landing__section-eyebrow">Кейсы</p>
+                <h2 class="landing__section-title" id="cases-title">Социальное доказательство в цифрах</h2>
+            </div>
+
+            <div class="cases__grid">
+                <article class="cases__card cases__card--featured">
+                    <div class="cases__top">
+                        <div class="cases__profile">
+                            <img
+                                class="cases__avatar"
+                                src="src/graphics/png/arman-photo.jpg"
+                                alt="Арман, селлер товаров для дома"
+                                width="2001"
+                                height="3000"
+                            >
+                            <div class="cases__person">
+                                <h3 class="cases__name">Арман</h3>
+                                <p class="cases__role">Селлер товаров для дома</p>
+                            </div>
+                        </div>
+                        <span class="cases__tag">Товары для дома</span>
+                    </div>
+
+                    <div class="cases__metrics">
+                        <div class="cases__metric">
+                            <span class="cases__metric-value">-27%</span>
+                            <span class="cases__metric-label">расходы на хранение</span>
+                        </div>
+                        <div class="cases__metric">
+                            <span class="cases__metric-value">240</span>
+                            <span class="cases__metric-label">заказов в день</span>
+                        </div>
+                        <div class="cases__metric">
+                            <span class="cases__metric-value">1,4%</span>
+                            <span class="cases__metric-label">ошибок в комплектации</span>
+                        </div>
+                    </div>
+
+                    <p class="cases__text">
+                        До: два небольших склада, ручной учёт и постоянная
+                        пересборка заказов.
+                    </p>
+                    <p class="cases__result">
+                        После: расходы на хранение снизились на 27%, сборка выросла
+                        с 90 до 240 заказов в день, ошибки в комплектации
+                        сократились с 5,8% до 1,4%.
+                    </p>
+                </article>
+
+                <article class="cases__card cases__card--accent">
+                    <div class="cases__top">
+                        <div class="cases__profile">
+                            <img
+                                class="cases__avatar"
+                                src="src/graphics/png/liana-photo.jpg"
+                                alt="Лиана, операционный директор fashion-бренда"
+                                width="4000"
+                                height="6000"
+                            >
+                            <div class="cases__person">
+                                <h3 class="cases__name">Лиана</h3>
+                                <p class="cases__role">Операционный директор fashion-бренда</p>
+                            </div>
+                        </div>
+                        <span class="cases__tag">Fashion</span>
+                    </div>
+
+                    <div class="cases__metrics">
+                        <div class="cases__metric">
+                            <span class="cases__metric-value">21</span>
+                            <span class="cases__metric-label">день до запуска</span>
+                        </div>
+                        <div class="cases__metric">
+                            <span class="cases__metric-value">1 500</span>
+                            <span class="cases__metric-label">SKU заведено</span>
+                        </div>
+                        <div class="cases__metric">
+                            <span class="cases__metric-value">94%</span>
+                            <span class="cases__metric-label">отгрузок в день заказа</span>
+                        </div>
+                    </div>
+
+                    <p class="cases__text">
+                        До: запуск продаж буксовал 12 недель из-за маркировки,
+                        остатков и ручной упаковки.
+                    </p>
+                    <p class="cases__result">
+                        После: складской контур запустили за 21 день, завели 1 500
+                        SKU, а 94% заказов начали уходить в день оформления.
+                    </p>
+                </article>
+
+                <article class="cases__card cases__card--contrast">
+                    <div class="cases__top">
+                        <div class="cases__profile">
+                            <img
+                                class="cases__avatar"
+                                src="src/graphics/png/karen-photo.jpg"
+                                alt="Карен, владелец бренда электроники и аксессуаров"
+                                width="3254"
+                                height="2160"
+                            >
+                            <div class="cases__person">
+                                <h3 class="cases__name">Карен</h3>
+                                <p class="cases__role">Владелец бренда электроники и аксессуаров</p>
+                            </div>
+                        </div>
+                        <span class="cases__tag">Электроника</span>
+                    </div>
+
+                    <div class="cases__metrics">
+                        <div class="cases__metric">
+                            <span class="cases__metric-value">420</span>
+                            <span class="cases__metric-label">заказов в день</span>
+                        </div>
+                        <div class="cases__metric">
+                            <span class="cases__metric-value">98,9%</span>
+                            <span class="cases__metric-label">точность сборки</span>
+                        </div>
+                        <div class="cases__metric">
+                            <span class="cases__metric-value">48 ч</span>
+                            <span class="cases__metric-label">обработка возвратов</span>
+                        </div>
+                    </div>
+
+                    <p class="cases__text">
+                        До: 180 заказов в день, ошибки в комплектации на уровне
+                        6,4% и возвраты, которые разбирались неделями.
+                    </p>
+                    <p class="cases__result">
+                        После: 420 заказов в день, точность сборки 98,9%, обработка
+                        возвратов сократилась до 48 часов.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="landing__section faq" id="faq" aria-labelledby="faq-title">
+            <div class="landing__section-header">
+                <p class="landing__section-eyebrow">FAQ</p>
+                <h2 class="landing__section-title" id="faq-title">Частые вопросы до запуска</h2>
+            </div>
+
+            <div class="faq__list">
+                <details class="faq__item">
+                    <summary class="faq__question">С какими объёмами имеет смысл подключать фулфилмент?</summary>
+                    <p class="faq__answer">
+                        Не только с тысячами заказов. Если у вас уже есть регулярные
+                        поставки, несколько каналов продаж и команда начинает
+                        вязнуть в сборке, внешний склад обычно выгоднее ручного
+                        хаоса.
+                    </p>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">Сколько времени занимает запуск?</summary>
+                    <p class="faq__answer">
+                        Зависит от количества SKU, правил маркировки и сложности
+                        процессов. Простые проекты можно подготовить быстро, более
+                        сложные требуют аудита, тестовой приёмки и настройки
+                        операций. Сначала фиксируем этапы, потом называем реальный
+                        срок.
+                    </p>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">Можно ли работать не по полному пакету услуг?</summary>
+                    <p class="faq__answer">
+                        Да, но максимальный эффект чаще всего даёт связка приёмки,
+                        учёта, маркировки, сборки и отгрузки. Проблема редко живёт
+                        только в одном месте, поэтому мы считаем экономику целиком.
+                    </p>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">Как считается стоимость?</summary>
+                    <p class="faq__answer">
+                        Обычно из нескольких блоков: приёмка, хранение, операции с
+                        товаром, сборка, упаковка, отгрузка и возвраты. Прозрачная
+                        смета до старта полезнее низкой цены в первой строке
+                        прайса.
+                    </p>
+                </details>
+                <details class="faq__item">
+                    <summary class="faq__question">Поможете с доставкой в другие страны и особыми требованиями?</summary>
+                    <p class="faq__answer">
+                        Это зависит от категории товара, маршрута, документов и
+                        правил конкретной площадки. Здесь лучше считать кейс
+                        отдельно. (Свяжись со мной, я помогу)
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <section class="landing__section cta" id="final-cta" aria-labelledby="final-cta-title">
+            <div class="cta__panel">
+                <p class="cta__eyebrow">Финальный шаг</p>
+                <h2 class="cta__title" id="final-cta-title">Если хотите расти без складского хаоса, начните с расчёта под ваши объёмы</h2>
+                <p class="cta__text">
+                    Гарантия прозрачности: до старта фиксируем состав услуг,
+                    экономику и SLA, чтобы вы понимали, за что платите и какой
+                    результат получаете.
+                </p>
+                <div class="cta__actions">
+                    <button class="button button--primary cta__button" type="button">Оставить заявку на расчёт</button>
+                </div>
+                <p class="cta__note">
+                    Для точного расчёта обычно достаточно четырёх вводных:
+                    количество SKU, среднее число заказов в день, тип товара и ваши
+                    каналы продаж.
+                </p>
+            </div>
+        </section>
     </main>
 
     <div data-partial="src/partials/footer.html"></div>
+
+    <a class="backer" href="#site-header" aria-label="Вернуться к началу страницы">Backer</a>
 
     <script src="scripts-js-php/script.js"></script>
 </body>
