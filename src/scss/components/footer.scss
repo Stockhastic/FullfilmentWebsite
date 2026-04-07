@@ -1,0 +1,15 @@
+.site-footer {
+    border-top: 1px solid $border-color;
+    background-color: $surface-color;
+}
+
+.site-footer__inner {
+    @include container;
+    padding-block: 24px;
+}
+
+.site-footer__copy {
+    font-size: 14px;
+    line-height: 1.4;
+    color: $text-color-secondary;
+}

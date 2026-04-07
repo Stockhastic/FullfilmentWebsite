@@ -1,0 +1,41 @@
+.site-header {
+    border-bottom: 1px solid $border-color;
+    background-color: $bg-color;
+}
+
+.site-header__inner,
+.page-content {
+    @include container;
+}
+
+.site-header__inner {
+    @include flex-center(space-between, center, 24px);
+    padding-block: 24px;
+}
+
+.site-header__brand {
+    font-size: 20px;
+    font-weight: $fw-bold;
+}
+
+.site-header__nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.page-content {
+    padding-block: $section-offset;
+}
+
+.page-content h1 {
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: $fw-bold;
+}
+
+.page-content p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: $text-color-muted;
+}

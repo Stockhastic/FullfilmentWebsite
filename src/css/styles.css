@@ -1,0 +1,121 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.site-footer {
+  border-top: 1px solid #555;
+  background-color: #f5f5f5;
+}
+
+.site-footer__inner {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding-inline: 20px;
+  padding-block: 24px;
+}
+
+.site-footer__copy {
+  font-size: 14px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.64);
+}
+
+.site-header {
+  border-bottom: 1px solid #555;
+  background-color: #fff;
+}
+
+.site-header__inner,
+.page-content {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding-inline: 20px;
+}
+
+.site-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding-block: 24px;
+}
+
+.site-header__brand {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.site-header__nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-content {
+  padding-block: 80px;
+}
+
+.page-content h1 {
+  margin-bottom: 16px;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.page-content p {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.infocard {
+  border: 1px solid #555;
+  border-radius: 2rem;
+  padding: 10px;
+}/*# sourceMappingURL=styles.css.map */
