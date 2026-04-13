@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Over+the+Rainbow&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/styles.css">
     <meta
         name="description"
-        content="Фулфилмент-склад в Ереване для брендов, интернет-магазинов и селлеров: приёмка, хранение, маркировка, упаковка, сборка, отгрузка и прозрачный контроль остатков."
+        content="Armways — фулфилмент-склад в Ереване для брендов, интернет-магазинов и селлеров: приёмка, хранение, маркировка, упаковка, сборка, отгрузка и прозрачный контроль остатков."
     >
 
     <!-- FAVICON -->
@@ -27,7 +30,7 @@
     <!-- Android -->
     <link rel="manifest" href="src/graphics/site.webmanifest">
 
-    <title>Фулфилмент-склад в Ереване | Приёмка, хранение, сборка и отгрузка</title>
+    <title>Armways | Фулфилмент-склад в Ереване</title>
     
     <!-- OpenGraphics for Thumbnails -->
     <!-- <meta property="og:title" content="TITLE_PAGE" />
@@ -48,15 +51,19 @@
     <meta name="twitter:image:alt" content="Описание изображения" /> -->
 </head>
 
-<body>
+<body class="page-home">
     <div data-partial="src/partials/header.html"></div>
 
     <main class="landing">
         <section class="landing__section hero" id="hero" aria-labelledby="hero-title">
             <div class="hero__panel">
                 <div class="hero__content">
-                    <p class="hero__eyebrow">Фулфилмент-склад в Ереване для брендов, селлеров и интернет-магазинов</p>
-                    <h1 class="hero__title" id="hero-title">Продавайте больше, а складскую операционку оставьте нам</h1>
+                    <p class="hero__eyebrow">Armways: фулфилмент-склад в Ереване для брендов, селлеров и интернет-магазинов</p>
+                    <h1 class="hero__title" id="hero-title">
+                        <span class="hero__title-line">Продавайте больше,</span>
+                        <span class="hero__title-line">а складскую операционку</span>
+                        <span class="hero__title-line">оставьте нам</span>
+                    </h1>
                     <p class="hero__lead">
                         Берём на себя приёмку, хранение, маркировку, сборку и отгрузку
                         заказов, чтобы вы росли без пересорта, штрафов и хаоса в
@@ -65,14 +72,6 @@
                     <div class="hero__actions">
                         <a class="button button--primary hero__button" href="#final-cta">Получить расчёт за 30 минут</a>
                     </div>
-                    <p class="hero__support">
-                        Когда склад живёт в таблицах и чатах, рост компании начинает
-                        ломать маржу. Вам приходится выбирать между рекламой, наймом и
-                        бесконечным контролем коробок. Мы снимаем эту нагрузку и
-                        превращаем склад в предсказуемый процесс. Одна цель: каждый
-                        заказ собирается вовремя, а у вас остаётся время на продажи и
-                        масштабирование.
-                    </p>
                 </div>
 
                 <aside class="hero__aside">
@@ -85,17 +84,6 @@
                             height="1024"
                         >
                     </figure>
-
-                    <div class="hero__summary" aria-label="Ключевые преимущества">
-                        <div class="hero__summary-card">
-                            <p class="hero__summary-label">Что меняется после запуска</p>
-                            <ul class="hero__summary-list">
-                                <li class="hero__summary-item">Одна точка управления складской операцией в Ереване</li>
-                                <li class="hero__summary-item">Прозрачные остатки, сборка и статусы заказов</li>
-                                <li class="hero__summary-item">Меньше ручного контроля, ошибок, штрафов и потерь</li>
-                            </ul>
-                        </div>
-                    </div>
                 </aside>
             </div>
         </section>
@@ -116,11 +104,11 @@
                     <img
                         class="showcase__image"
                         src="src/graphics/png/phoho2.png"
-                        alt="Складская инфраструктура для хранения и обработки товара"
+                        alt="Поток отгрузки и обработки складских операций"
                         width="1536"
                         height="1024"
                     >
-                    <figcaption class="showcase__caption">Складская инфраструктура</figcaption>
+                    <figcaption class="showcase__caption">Поток отгрузки</figcaption>
                 </figure>
 
                 <figure class="showcase__item">
@@ -149,12 +137,64 @@
                     <img
                         class="showcase__image"
                         src="src/graphics/png/phoho5.png"
-                        alt="Поток отгрузки и обработки складских операций"
+                        alt="Складская инфраструктура для хранения и обработки товара"
                         width="1536"
                         height="1024"
                     >
-                    <figcaption class="showcase__caption">Поток отгрузки</figcaption>
+                    <figcaption class="showcase__caption">Складская инфраструктура</figcaption>
                 </figure>
+            </div>
+
+            <div class="showcase__afterword" aria-labelledby="showcase-afterword-title">
+                <div class="showcase__afterword-head">
+                    <p class="showcase__afterword-eyebrow">После запуска</p>
+                    <h3 class="showcase__afterword-title" id="showcase-afterword-title">Что меняется после запуска</h3>
+                    <p class="showcase__afterword-lead">
+                        Склад перестаёт быть отдельной зоной ручного контроля и становится управляемой частью бизнеса.
+                        Вам больше не нужно каждый день собирать картину из таблиц, сообщений и срочных уточнений.
+                    </p>
+                </div>
+
+                <div class="showcase__afterword-grid">
+                    <div class="showcase__afterword-item">
+                        <p class="showcase__afterword-item-title">Одна точка управления</p>
+                        <p class="showcase__afterword-item-text">
+                            Приёмка, хранение, сборка и отгрузка работают в одном контуре, а решения по складу не расползаются между разными подрядчиками и чатами.
+                        </p>
+                    </div>
+
+                    <div class="showcase__afterword-item">
+                        <p class="showcase__afterword-item-title">Прозрачные остатки и статусы</p>
+                        <p class="showcase__afterword-item-text">
+                            Видно, что находится на складе, что уже собрано, что ждёт отгрузки и где появляется перегруз по процессу или товарным позициям.
+                        </p>
+                    </div>
+
+                    <div class="showcase__afterword-item">
+                        <p class="showcase__afterword-item-title">Меньше операционных потерь</p>
+                        <p class="showcase__afterword-item-text">
+                            Снижается объём ручного контроля, ошибок в комплектации, возвратов по вине склада, штрафов и потерь времени на постоянные перепроверки.
+                        </p>
+                    </div>
+
+                    <div class="showcase__afterword-item">
+                        <p class="showcase__afterword-item-title">Рост без внутреннего хаоса</p>
+                        <p class="showcase__afterword-item-text">
+                            Когда заказов становится больше, бизнес не утыкается в складскую рутину и может концентрироваться на продажах, рекламе и расширении каналов.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="showcase__afterword-note">
+                    <p class="showcase__afterword-note-title">Что это значит в операционной реальности</p>
+                    <p class="showcase__afterword-note-text">
+                        Armways берёт на себя рабочий слой склада в Ереване: приёмку поставок, размещение товара,
+                        маркировку, сборку, упаковку, возвраты и передачу заказов в доставку. Для бренда или
+                        интернет-магазина это означает не просто внешний склад, а понятную систему, в которой легче
+                        планировать закупки, запускать новые каналы продаж, проходить сезонные пики и расти без
+                        постоянного ручного вмешательства со стороны владельца.
+                    </p>
+                </div>
             </div>
         </section>
 

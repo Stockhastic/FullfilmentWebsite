@@ -17,11 +17,11 @@
     display: grid;
     grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
     gap: 32px;
-    align-items: start;
+    align-items: stretch;
 }
 
 .cta-section__content {
-    padding-top: 8px;
+    padding-top: 0;
 }
 
 .cta-section__eyebrow {
@@ -79,6 +79,8 @@
 }
 
 .cta-section__form-wrap {
+    display: flex;
+    min-height: 100%;
     padding: 28px;
     border-radius: $radius-md;
     background-color: $surface-color;
@@ -86,7 +88,9 @@
 }
 
 .cta-section__form {
-    display: grid;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
     gap: 20px;
 }
 
@@ -150,6 +154,7 @@
 .cta-section__submit-row {
     display: grid;
     gap: 12px;
+    margin-top: auto;
 }
 
 .cta-section__submit {

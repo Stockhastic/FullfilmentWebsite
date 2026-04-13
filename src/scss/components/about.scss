@@ -1,7 +1,7 @@
 .about-page {
     @include container;
-    padding-top: 28px;
-    padding-bottom: 88px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .about-page__section + .about-page__section {
@@ -370,7 +370,7 @@
 
 @include media-down(desktop) {
     .about-page {
-        padding-bottom: 72px;
+        padding-bottom: 0;
     }
 
     .about-hero__panel,
@@ -388,8 +388,8 @@
 
 @include media-down(tablet) {
     .about-page {
-        padding-top: 20px;
-        padding-bottom: 56px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .about-page__section + .about-page__section {

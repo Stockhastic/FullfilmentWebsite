@@ -2,9 +2,14 @@
     position: sticky;
     top: 0;
     z-index: $z-header;
-    border-bottom: 1px solid rgba($text-color, 0.08);
-    background-color: rgba($surface-color, 0.92);
-    backdrop-filter: blur(18px);
+    border-bottom: 0;
+    background-color: transparent;
+    backdrop-filter: none;
+}
+
+.page-home .site-header {
+    position: absolute;
+    inset: 0 0 auto;
 }
 
 .site-header__inner {
@@ -24,19 +29,40 @@
 
 .site-header__brand-logo {
     display: block;
-    width: 44px;
+    width: 60px;
     height: auto;
 }
 
 .site-header__brand-text {
-    font-size: 18px;
+    color: inherit;
+    font-size: 24px;
     font-weight: $fw-bold;
-    line-height: 1.3;
+    line-height: 1.1;
 }
 
 .site-header__nav {
     @include flex-center(center, center, 24px);
     flex-wrap: wrap;
+    padding: 8px 12px;
+    border: 1px solid rgba($white, 0.42);
+    border-radius: $radius-md;
+    background-color: rgba($white, 0.62);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 12px 28px rgba($text-color, 0.08);
+}
+
+.page-home .site-header__brand,
+.page-home .site-header__brand-text {
+    color: $white;
+}
+
+.page-home .site-header__nav {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
 }
 
 .site-header__link {
@@ -49,6 +75,15 @@
     &:hover,
     &:focus-visible {
         color: $text-color;
+    }
+}
+
+.page-home .site-header__link {
+    color: rgba($white, 0.84);
+
+    &:hover,
+    &:focus-visible {
+        color: $white;
     }
 }
 
@@ -83,8 +118,12 @@
         width: 100%;
     }
 
+    .site-header__brand-logo {
+        width: 52px;
+    }
+
     .site-header__brand-text {
-        font-size: 16px;
+        font-size: 21px;
     }
 
     .site-header__cta {
